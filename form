@@ -1,0 +1,116 @@
+
+<!doctype html>
+<html>
+<head>
+  <style>
+    .cajas {
+      background-color: black;
+      color: white;
+      margin: 20px;
+      padding: 20px;
+      vertical-align: center;
+    }
+
+    .h1 {
+      size: 40px;
+      text-align: center;
+      font-kerning: 10px;
+      font-size: 40px;
+    }
+
+ .ul {
+  list-style-type: lower-alpha;
+  margin: 40px;
+  padding: 40px;
+  background-color: orange;
+  color: black;
+  }
+  .li {
+    padding: 15px;
+    text-align: center;
+      }
+
+  </style>
+
+    <div class="h1">
+    <h2>Formulario</h2>
+<p>Completa los datos y participaras en un sorteo</p>
+</div>
+<div>
+<form method="post" action="miservidor.php">
+    <div class="cajas">
+      <label for=”cpostal”>Codigo Postal:</label>
+      <input id=”cpostal” type=”number” l>
+    </div>
+    <div class="cajas">
+    <label for=satisfaccion>Seleccione su nivel de satisfacci&oacute;n</label>
+    <select id=”satisfaccion”>
+        <option value=”5”>Muy satisfecho</option>
+        <option value=”4”>Satisfecho</option>
+        <option value=”3”>Poco satisfecho </option>
+        <option value=”2”>Neutro </option>
+        <option value=”1”>Insatisfecho </option>
+      </select>
+    </div>
+    <div class="cajas">
+      <label for=”email”>Correo electr&oacute;nico</label>
+      <input id=”email” type=”text”>
+    </div>
+     <div class="cajas">
+    <label for=”positivo”>Puntos a favor del producto:</label>
+    <textarea id=”positivo”></textarea>
+  </div>
+  <div class="cajas">
+    <label for=”negativo”>Puntos en contra del producto:</label>
+    <textarea id=”negativo”></textarea>
+  </div>
+  <div class="h1">
+    <p> Valore las siguientes caracteristicas de nuestro producto</p>
+    </div>
+    <div class="cajas">
+    <ul class="ul">
+      <li class="li">
+      <label for=”motor”>Motor:</label>
+      <select id=”motor”>
+        <option value=”4”>Excelente</option>
+        <option value=”3”>Bueno</option>
+        <option value=”2”>Regular </option>
+        <option value=”1”>P&eacute;simo </option>
+        </select>
+      </li>
+        <li class="li">
+        <label for=”consumo”>Consumo:</label>
+      <select id=”consumo”>
+        <option value=”4”>Excelente</option>
+        <option value=”3”>Bueno</option>
+        <option value=”2”>Regular </option>
+        <option value=”1”>P&eacute;simo </option>
+        </select>
+      </li>
+      <li class="li">
+        <label for=”ruido”>Ruido:</label>
+      <select id=”ruido”>
+        <option value=”4”>Excelente</option>
+        <option value=”3”>Bueno</option>
+        <option value=”2”>Regular </option>
+        <option value=”1”>P&eacute;simo </option>
+        </select>
+      </Li>
+       <li class="li">
+        <label for=”habitat”>Habit&aacute;culo:</label>
+      <select id=”habitat”>
+        <option value=”4”>Excelente</option>
+        <option value=”3”>Bueno</option>
+        <option value=”2”>Regular </option>
+        <option value=”1”>P&eacute;simo </option>
+        </select>
+      </li>
+    </ul>
+  </div>
+
+
+  <div style="color: green">
+  <input type=”submit” value=”Enviar” align="center" >
+</div>
+
+</form>
